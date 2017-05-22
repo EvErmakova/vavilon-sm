@@ -1,0 +1,57 @@
+.clearfix {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+/* FONTS */
+
+.fw_light {
+  font-weight: 300;
+}
+
+.fw_regular {
+  font-weight: 400;
+}
+
+.fw_bold {
+  font-weight: 700;
+}
+
+/* CENTERED */
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centeredY {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.centeredX {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* TEXT-ALIGN */
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}

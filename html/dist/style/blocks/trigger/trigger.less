@@ -1,0 +1,44 @@
+.trigger {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  transition: 0.3s ease-out;
+  span,
+  &:before,
+  &:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin-left: -15px;
+    margin-top: -2px;
+    border-radius: 2px;
+    transition: .3s ease-out;
+  }
+  &:before,
+  &:after {
+    content: '';
+    transform: rotate(0deg);
+  }
+  &:before {
+    margin-top: -12px;
+  }
+  &:after {
+    margin-top: 8px;
+  }
+  &.open {
+    span {
+      opacity: 0;
+    }
+    &:before {
+      margin-top: -4px;
+      transform: rotate(45deg);
+    }
+    &:after {
+      margin-top: -4px;
+      transform: rotate(-45deg);
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.btn {
+  position: relative;
+  margin-right: 11px;
+  padding: 7px;
+  background-color: @c-2;
+  border: 2px solid;
+  border-color: @c-2;
+  border-radius: 2px;
+  color: @c-4;
+  .fw_bold;
+  transition: .3s ease-out;
+  &:hover {
+    background-color: transparent;
+    color: @c-2;
+  }
+  &:active {
+    top: 1px;
+  }
+  &:last-of-type {
+    margin-right: 0;
+  }
+  &_white {
+    background-color: @c-4;
+    border-color: @c-4;
+    color: @c-1;
+    &:hover {
+      color: @c-4;
+    }
+  }
+}

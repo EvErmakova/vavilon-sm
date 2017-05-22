@@ -1,0 +1,25 @@
+header.header
+    include ../nav/nav_top
+
+    .container
+        .row
+            .col-md-8
+                a.header__logo(href="#" alt="Студия мебели Вавилон")
+                    img(src="images/logo.png" alt="Студия мебели Вавилон")
+
+            .col-md-2
+                .info-block.header__info-block
+                    i.fa.fa-map-marker.info-block__icon
+                    .info-block__text
+                        |г. Омск,
+                        br
+                        |5-я Кордная, 1 к. 1
+            .col-md-2
+                .info-block.header__info-block
+                    i.fa.fa-phone.info-block__icon
+                    .info-block__text
+                        a(href="telto:+73812336318") +7 (3812) 33-63-18
+                        br
+                        a(href="telto:89503300581") 8-950-330-05-81
+
+    include ../nav/nav_main

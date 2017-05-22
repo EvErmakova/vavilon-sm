@@ -1,0 +1,33 @@
+.nav_main {
+  color: @c-2;
+  height: 60px;
+  &__list {
+    max-height: 60px;
+    padding-top: 4px;
+    padding-right: 60px;
+    overflow: hidden;
+    transition: .3s ease-out;
+    background: @c-4;
+    z-index: 10;
+    &.open {
+      max-height: 180px;
+    }
+  }
+  &__item-link {
+    padding-top: 15px;
+    &:after {
+      background-color: @c-2;
+    }
+  }
+  &__trigger {
+    position: absolute !important;
+    top: 0;
+    right: 15px;
+    z-index: 15;
+    span,
+    &:before,
+    &:after {
+      background-color: @c-2;
+    }
+  }
+}
